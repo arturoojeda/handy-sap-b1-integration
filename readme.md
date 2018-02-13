@@ -38,6 +38,21 @@ handy {
 }
 ```
 
+- De la misma manera, configura los datos de conexion a la BD de SAP en el siguiente apartado del mismo archivo:
+
+```
+dataSource_erp {
+    username = 'USER'
+    password = 'PASSWORD'
+
+    // SQL Server
+    dialect = org.hibernate.dialect.SQLServerDialect
+    driverClassName = "com.microsoft.sqlserver.jdbc.SQLServerDriver"
+    //Pruebas
+    url = "jdbc:sqlserver://HOSTNAME:1433;databaseName=DATABASE_NAME"
+}
+```
+
 - Accede a la carpeta donde descargaste el código fuente de la aplicacin y corre el comando "grails prod war" para generar el archivo WAR de la aplicacion, que se generará en el subdirectorio /target
 
 - Asegurate de que el servidio de Tomcat está detenido y copia el archivo WAR a la carpeta "webapps" de la instalacion de Tomcat 7. Cambia el nombre del archivo WAR a "handy.war"
