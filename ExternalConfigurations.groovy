@@ -119,7 +119,7 @@ erp {
                         sqlType = 'nvarchar(100)'
                     }
                     enabled {
-                        name = 'U_EstatusCliente'
+                        name = 'U_HandyCustomerStatus'
                         sqlType = 'nvarchar(20)'
                     }
                     address {
@@ -232,7 +232,7 @@ erp {
                         sqlType = 'nvarchar(100)'
                     }
                     family {
-                        name = 'U_FAMILIA'
+                        name = 'U_HandyProductCategory'
                         sqlType = 'nvarchar(30)'
                     }
                     enabled {
