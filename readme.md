@@ -93,6 +93,34 @@ productPriceCustomer {
     agreements = false
 }
 ```
+- Configura los datos de conexion a la instancia de SAP:
+
+```
+erp {
+
+    sap {
+        enabled = false
+        company {
+            licenseServer = 'HOSTNAME:30000'
+            server = 'HOSTNAME'
+            companyDB = 'SAPBO_DB_NAME'
+            userName = ''
+            password = ''
+            dbUserName = ''
+            dbPassword = ''
+
+            //dbServerType =  1 //MSSQL
+            //dbServerType =  2 //DB_2
+            //dbServerType = 3 //SYBASE
+            //dbServerType = 4 //MSSQL2005
+            //dbServerType = 5 //MAXDB
+            //dbServerType = 6 //MSSQL2008
+            dbServerType = 7 //MSSQL2012
+            //dbServerType = 8 //MSSQL2014
+            //dbServerType = 9 //HANADB
+        }
+ }
+ ```
 
 - Accede a la carpeta donde descargaste el código fuente de la aplicacin y corre el comando "grails prod war" para generar el archivo WAR de la aplicacion, que se generará en el subdirectorio /target
 
