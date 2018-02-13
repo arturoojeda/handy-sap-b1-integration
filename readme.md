@@ -1,3 +1,7 @@
+Conector para SAP B1 (v8 y v9) hacia Handy para BD SQL Server.
+
+[Conoce ms sobre esta integracion aqui](http://ayuda.handy.la/general/integracion-sap-b1-handy).
+
 Pasos para la instalacion:
 
 - Intala el SDK de JAVA 7 (JDK) y asegurate de agregarlo como variable de la linea de comando (que la linea de comando responda al comando "java" y que la variable de entorno JAVA_HOME apunte a la carpeta donde reside Java)
