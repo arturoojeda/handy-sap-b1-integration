@@ -4,7 +4,11 @@ Conector para SAP B1 (v8 y v9) hacia Handy para BD SQL Server.
 
 Especificaciones recomendadas para el servidor donde residira la aplicacion:
 
-3 GB de memoria asignada para Handy, 4 core CPU y 5 GB de almacenamiento asignado para Handy.
+3 GB de memoria asignada para Handy, 4 core CPU y 5 GB de almacenamiento asignado para Handy. 
+
+NO se recomienda utilizar servidores de 32 bits por limitaciones de memoria.
+
+Esta aplicacon es compatible con servidores Windows y Linux.
 
 Pasos para la instalacion:
 
@@ -14,7 +18,7 @@ Pasos para la instalacion:
 
 - Crea la carpeta **/handy/sap-sync/** (Windows: C:/handy/sap-sync/) y asegurate que el usuario con el que corre Tomcat tiene acceso de escritura (sudo chmod 777 handy).
 
-- Instala la DI API de SAP B1.
+- Instala la DI API de SAP B1 de 64 bits (x64).
 
 - Asegúrate de tener instalado [Grails 2.2.1](http://grails.org/download.html) correctamente. Lo puedes comprobar desde la línea de comando corriendo el comando "grails".
 
