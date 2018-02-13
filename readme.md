@@ -1,4 +1,4 @@
-Conector para SAP B1 (v8 y v9) hacia Handy para BD SQL Server.
+#Conector para SAP B1 (v8 y v9) hacia Handy para BD SQL Server.
 
 [Conoce mas sobre esta integracion aqui](http://ayuda.handy.la/general/integracion-sap-b1-handy).
 
