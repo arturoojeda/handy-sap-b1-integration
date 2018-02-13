@@ -138,6 +138,8 @@ erp {
 
 - Crea el campo personalizado de [familia de producto (OITM.U_HandyProductCategory)](http://ayuda.handy.la/general/integracion-sap-b1-handy) en la BD de SAP B1.
 
+- Para obtener un mejor rendimiento de la instancia de Tomcat, (duplica los valores default de asignacion de memoria)[http://www.mkyong.com/tomcat/tomcat-javalangoutofmemoryerror-permgen-space/].
+
 - Corre el servicio de Tomcat
 
 - Desde un navegador web, accede a la URL http://localhost:8080/handy (sensible a mayusculas y minusculas) y verifica que la pagina web te responde.
