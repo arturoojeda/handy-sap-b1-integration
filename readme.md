@@ -2,6 +2,10 @@ Conector para SAP B1 (v8 y v9) hacia Handy para BD SQL Server.
 
 [Conoce mas sobre esta integracion aqui](http://ayuda.handy.la/general/integracion-sap-b1-handy).
 
+Especificaciones recomendadas para el servidor donde residira la aplicacion:
+
+3 GB de memoria asignada para Handy, 4 core CPU y 5 GB de almacenamiento asignado para Handy.
+
 Pasos para la instalacion:
 
 - Intala el SDK de JAVA 7 (JDK) y asegurate de agregarlo como variable de la linea de comando (que la linea de comando responda al comando "java" y que la variable de entorno JAVA_HOME apunte a la carpeta donde reside Java)
