@@ -101,7 +101,7 @@ productPriceCustomer {
     agreements = false
 }
 ```
-- Configura los datos de conexion a la instancia de SAP:
+- Configura los datos de conexion a la instancia de SAP y también BD de nuevo:
 
 ```
 erp {
