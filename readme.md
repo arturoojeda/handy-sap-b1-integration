@@ -1,8 +1,10 @@
-Pre-requisitos:
+Pasos para la instalacion:
 
 - Intala el SDK de JAVA 7 (JDK) y asegurate de agregarlo como variable de la linea de comando (que la linea de comando responda al comando "java" y que la variable de entorno JAVA_HOME apunte a la carpeta donde reside Java)
 
 - Instala Tomcat 7 para 64 bits
+
+- Crea la carpeta **/handy/sap-sync/** (Windows: C:/handy/sap-sync/) y asegurate que el usuario con el que corre Tomcat tiene acceso de escritura (sudo chmod 777 handy).
 
 - Instala la DI API de SAP B1.
 
@@ -16,6 +18,26 @@ grails>
 
 - Descarga el codigo fuente de este repositorio
 
+- Copia el archivo de configuraciones de este reposotorio llamado [ExternalConfigurations.groovy](https://github.com/arturoojeda/handy-sap-b1-integration/blob/master/ExternalConfigurations.groovy) a la carpeta raiz de Tomcat
+
+- Crea una variable de entorno llamada **HandySyncEngineConfiguration** que apunte a dicho archivo con ruta absoluta.
+
+- Crea un usuario administrador en el portal Handy, en tu cuenta. Se recomienda llamar al usuario "Integracion SAP" para su facil identificacion. Las credenciales de este usuario las necesitaras a continuacion.
+
+- Edita el archivo de configuraciones con las credenciales de Handy sobre las siguientes variables:
+
+```
+handy {
+    username = ''
+    password = ''
+    logentriesToken = ''
+    company = ''
+    currency = 'MXN'
+}
+```
+
+- Utilizando un editor de texto, 
+
 - Accede a la carpeta donde descargaste el código fuente de la aplicacin y corre el comando "grails prod war" para generar el archivo WAR de la aplicacion, que se generará en el subdirectorio /target
 
 - Asegurate de que el servidio de Tomcat está detenido y copia el archivo WAR a la carpeta "webapps" de la instalacion de Tomcat 7. Cambia el nombre del archivo WAR a "handy.war"
@@ -24,14 +46,7 @@ grails>
 
 - Crea el campo personalizado de [familia de producto (U_HandyProductCategory)](http://ayuda.handy.la/general/integracion-sap-b1-handy) en la BD de SAP B1.
 
+- Corre el servicio de Tomcat
 
-Debes de crear la siguiente carpeta en tu servidor para que la aplicación pueda correr:
-/handy/sap-sync/
-
-O en Windows:
-
-C:/handy/sap-sync/
-
-También debes de dar permisos de escritura a la carpeta de handy con el siguiente comando de terminal:
-sudo chmod 777 handy
+- Desde un navegador web, accede a la URL http://localhost:8080/handy (sensible a mayusculas y minusculas) y verifica que la pagina web te responde.
 
