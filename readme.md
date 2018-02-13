@@ -57,6 +57,43 @@ dataSource_erp {
 }
 ```
 
+- Sobre el mismo archivo, selecciona los datos de Handy que quieres sincronizar:
+
+```
+// ¿Guardar pedidos de Handy como oferta de ventas en SAP B1?
+salesOrder {
+    receive = true
+    takeHandyPrice = false
+    invoiceNotification = true
+    quotationSelectExchange = false
+    selectExchange = false
+    update = false
+}
+
+// ¿Crear clientes en SAP B1 hacia Handy?
+customer {
+    send = true
+    alwaysActive = false
+}
+
+// ¿Crear productos en SAP B1 hacia Handy?
+product {
+    send = true
+}
+
+// ¿Crear listas de precio en SAP B1 hacia Handy?
+priceList {
+    send = false
+    sendFromProduct = true
+}
+
+// ¿Crear acuerdos de precios especiales en SAP B1 hacia Handy?
+productPriceCustomer {
+    send = false
+    agreements = false
+}
+```
+
 - Accede a la carpeta donde descargaste el código fuente de la aplicacin y corre el comando "grails prod war" para generar el archivo WAR de la aplicacion, que se generará en el subdirectorio /target
 
 - Asegurate de que el servidio de Tomcat está detenido y copia el archivo WAR a la carpeta "webapps" de la instalacion de Tomcat 7. Cambia el nombre del archivo WAR a "handy.war"
