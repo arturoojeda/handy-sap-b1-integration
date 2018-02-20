@@ -20,7 +20,7 @@ Pasos para la instalacion:
 
 - Instala la DI API de SAP B1 de 64 bits (x64).
 
-- Asegúrate de tener instalado [Grails 2.2.1](http://grails.org/download.html) correctamente. Lo puedes comprobar desde la línea de comando corriendo el comando "grails".
+- Asegúrate de tener instalado [Grails 2.2.1](http://grails.org/download.html) correctamente. Lo puedes comprobar desde la línea de comando corriendo el comando "grails". También de te dejamos [este video](https://www.youtube.com/watch?v=Nu3GgjuUOtg) que muestra como montar todo el ambiente de Grails + Java completo en Windows.
 
 Deberás recibir la siguiente respuesta en la linea de comandos:
 ```
