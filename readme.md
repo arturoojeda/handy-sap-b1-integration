@@ -144,3 +144,8 @@ erp {
 
 - Desde un navegador web, accede a la URL http://localhost:8080/handy (sensible a mayusculas y minusculas) y verifica que la pagina web te responde.
 
+## Solucion de problemas
+
+### Ofertas de venta no se guardan en SAP B1
+- Verifica que el cliente no esté inactivo en SAP B1
+- Verifica que el cliente usado en Handy, existe en SAP B1
