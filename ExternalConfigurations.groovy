@@ -59,7 +59,7 @@ configuration {
 
     params {
         tb = 60000l
-        tp = 10800000l
+        tp = '0 0 0 ? * * *'
         tso = 60000l
         ths = 60000l
         tcp = '0 0/5 * 1/1 * ? *'
