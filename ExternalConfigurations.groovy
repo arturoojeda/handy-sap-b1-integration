@@ -15,10 +15,7 @@ dataSource_erp {
     // SQL Server
     dialect = org.hibernate.dialect.SQLServerDialect
     driverClassName = "com.microsoft.sqlserver.jdbc.SQLServerDriver"
-    //Producción
-    //url = "jdbc:sqlserver://localhost\\sql208:1433;databaseName=vc3d"
-    //Pruebas
-    url = "jdbc:sqlserver://:1433;databaseName=dbName"
+    url = "jdbc:sqlserver://IP_O_HOSTNAME:1433;databaseName=NOMBRE_DE_BD"
 
 }
 
