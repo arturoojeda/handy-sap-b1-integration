@@ -12,7 +12,7 @@ Esta aplicacon es compatible con servidores Windows y Linux.
 
 Pasos para la instalacion:
 
-- Intala el SDK de JAVA 7 (JDK) y asegurate de agregarlo como variable de la linea de comando (que la linea de comando responda al comando "java" y que la variable de entorno JAVA_HOME apunte a la carpeta donde reside Java)
+- Intala el SDK de JAVA 7 (JDK) y asegurate de agregarlo como variable de la linea de comando (que la linea de comando responda al comando "java" y que la variable de entorno JAVA_HOME apunte a la carpeta donde reside Java). Oracle ya no tiene disponible el JDK 7 para su descarga. Si estás usando Windows, te recomendamos [esta opcion](https://github.com/alexkasko/openjdk-unofficial-builds) ([64 bits](https://bitbucket.org/alexkasko/openjdk-unofficial-builds/downloads/openjdk-1.7.0-u80-unofficial-windows-amd64-installer.zip), [32 bits](https://bitbucket.org/alexkasko/openjdk-unofficial-builds/downloads/openjdk-1.7.0-u80-unofficial-windows-i586-installer.zip)), aunque es no oficial. Para Linux y macOS, puedes usar [OpenJDK](http://openjdk.java.net/). [Este video](https://www.youtube.com/watch?v=Nu3GgjuUOtg), explica sobre la instalacion de Java, ademas de la instalacion de Grails (siguientes pasos).
 
 - Instala Tomcat 7 para 64 bits
 
