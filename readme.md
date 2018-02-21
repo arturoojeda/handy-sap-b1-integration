@@ -38,7 +38,7 @@ grails>
 
 - Crea una cuenta gratuita en [LogEntries](https://logentries.com/), el sistema que se estara utilizando para llevar los logs de operacion del sistema. Una vez creada la cuenta, copia el token de LogEntries para configurarlo a continuacion.
 
-- Utilizando un editor de texto regular (recomendamos usar [SublimeText](https://www.sublimetext.com/) o [Notepad++](https://notepad-plus-plus.org/) , edita el archivo de configuraciones con las credenciales de Handy sobre las siguientes variables y el token de LogEntries. En "company", introduce el nombre de tu empresa:
+- Utilizando un editor de texto regular (recomendamos usar [SublimeText](https://www.sublimetext.com/) o [Notepad++](https://notepad-plus-plus.org/)) , edita el archivo de configuraciones con las credenciales de Handy sobre las siguientes variables y el token de LogEntries. En "company", introduce el nombre de tu empresa:
 
 ```
 handy {
