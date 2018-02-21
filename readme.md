@@ -134,9 +134,9 @@ erp {
 
 - Asegurate de que el servidio de Tomcat está detenido y copia el archivo WAR a la carpeta "webapps" de la instalacion de Tomcat 7. Cambia el nombre del archivo WAR a "handy.war"
 
-- Crea el campo personalizado de [status de cliente (OCRD.U_HandyCustomerStatus)](http://ayuda.handy.la/general/integracion-sap-b1-handy) en la BD de SAP B1. Debe de ser tipo nvarchar(20)
+- Crea el campo personalizado de [status de cliente (OCRD.U_HandyCustomerStatus)](http://ayuda.handy.la/general/integracion-sap-b1-handy) en la BD de SAP B1. Debe de ser tipo **nvarchar(20)**
 
-- Crea el campo personalizado de [familia de producto (OITM.U_HandyProductCategory)](http://ayuda.handy.la/general/integracion-sap-b1-handy) en la BD de SAP B1. Debe de ser de tipo nvarchar(30)
+- Crea el campo personalizado de [familia de producto (OITM.U_HandyProductCategory)](http://ayuda.handy.la/general/integracion-sap-b1-handy) en la BD de SAP B1. Debe de ser de tipo **nvarchar(30)**
 
 - Para obtener un mejor rendimiento de la instancia de Tomcat, (duplica los valores default de asignacion de memoria)[http://www.mkyong.com/tomcat/tomcat-javalangoutofmemoryerror-permgen-space/].
 
