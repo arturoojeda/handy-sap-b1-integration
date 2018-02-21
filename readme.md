@@ -149,3 +149,6 @@ erp {
 ### Ofertas de venta no se guardan en SAP B1
 - Verifica que el cliente no esté inactivo en SAP B1
 - Verifica que el cliente usado en Handy, existe en SAP B1
+
+### La aplicacion no compila
+- Si es por un error de depdendencias, borra la carpeta /Usuarios/tu_usuario/.grails (aplica de forma similar para Linux/macOS 7 Windows)
