@@ -77,7 +77,7 @@ configuration {
 erp {
 
     sap {
-        enabled = false
+        enabled = true
         company {
             licenseServer = 'HOSTNAME:30000'
             server = 'HOSTNAME'
@@ -149,7 +149,7 @@ erp {
                     }
                     salesPersonCode {
                         name = 'SlpCode'
-                        sqlType = 'smallint'
+                        sqlType = 'int(10)'
                     }
                     priceList {
                         name = 'ListNum'
@@ -172,7 +172,7 @@ erp {
                 column {
                     id {
                         name = 'SlpCode'
-                        sqlType = 'smallint'
+                        sqlType = 'int(10)'
                     }
                     name {
                         name = 'SlpName'
@@ -213,6 +213,10 @@ erp {
                         name = 'DocTotal'
                         sqlType = 'numeric(19)'
                     }
+                    docTime {
+                        name = 'DocTime'
+                        sqlType = 'smallint'
+                    }                     
                 }
             }
 
@@ -348,7 +352,7 @@ erp {
     }
 
     p1 {
-        enabled = true
+        enabled = false
         company {
             warehouse = 1
         }
