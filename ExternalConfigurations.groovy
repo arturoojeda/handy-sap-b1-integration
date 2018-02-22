@@ -1,11 +1,9 @@
-handy {
-    username = ''
-    password = ''
-    logentriesToken = ''
-    company = 'Mi empresa' // Cambia aqui a tu nombre
-    currency = 'MXN'
-    server = 'https://www.handy-app.net'
-}
+handy.username = ''
+handy.password = ''
+handy.logentriesToken = ''
+handy.company = 'Mi empresa' // Cambia aqui a tu nombre
+handy.currency = 'MXN'
+handy.server = 'https://www.handy-app.net'
 
 grails.plugin.awssdk.accessKey = ''
 grails.plugin.awssdk.secretKey = ''
@@ -64,10 +62,10 @@ configuration {
     }
 
     params {
-        tb = 60000l
+        tb = 60000
         tp = '0 0 0 ? * * *'
-        tso = 60000l
-        ths = 60000l
+        tso = 60000
+        ths = 60000
         tcp = '0 0/5 * 1/1 * ? *'
         thb = '0 0/10 * 1/1 * ? *'
         maxC = 5
