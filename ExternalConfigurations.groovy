@@ -10,7 +10,7 @@ aws.sqs = ''
 
 dataSource_erp {
     username = 'sa'
-    password = 'Qu@ntum'
+    password = ''
 
     // SQL Server
     dialect = org.hibernate.dialect.SQLServerDialect
@@ -53,7 +53,7 @@ configuration {
     }
 
     sqs{
-        enabled = true
+        enabled = false
         url = ''
     }
 
