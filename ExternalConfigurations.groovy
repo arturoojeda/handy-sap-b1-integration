@@ -7,8 +7,6 @@ handy {
     server = 'https://www.handy-app.net'
 }
 
-aws.sqs = ''
-
 grails.plugin.awssdk.accessKey = ''
 grails.plugin.awssdk.secretKey = ''
 grails.plugin.awssdk.region = ''
