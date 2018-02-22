@@ -20,8 +20,11 @@ dataSource_erp {
 }
 
 dataSource_local {
-    //url = "jdbc:derby:C:\\Handy\\handy-sync-engine-derby-db;create=true;territory=es_MX;collation=TERRITORY_BASED"
-    url = "jdbc:derby:/handy/handy-sync-engine-derby-db;create=true;territory=es_MX;collation=TERRITORY_BASED"
+    // Para Windows:
+    url = "jdbc:derby:C:\\Handy\\handy-sync-engine-derby-db;create=true;territory=es_MX;collation=TERRITORY_BASED"
+    
+    // Para Linux:
+    //url = "jdbc:derby:/handy/handy-sync-engine-derby-db;create=true;territory=es_MX;collation=TERRITORY_BASED"
 }
 
 
