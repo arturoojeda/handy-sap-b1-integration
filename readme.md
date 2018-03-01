@@ -4,7 +4,9 @@
 
 Especificaciones recomendadas para el servidor donde residira la aplicacion:
 
-3 GB de memoria asignada para Handy, 4 core CPU y 5 GB de almacenamiento asignado para Handy. 
+Windows Server con 3 GB de memoria RAM asignada para Handy, 4 core CPU y 5 GB de almacenamiento libres.
+
+Se realizaron pruebas con Windows Server 2012 y 2016 operando correctamente. Con Windows 7 hay ocasiones en las que se presentan bloqueos de seguridad de las conexiones salientes.
 
 NO se recomienda utilizar servidores de 32 bits por limitaciones de memoria.
 
@@ -29,6 +31,8 @@ grails>
 ```
 
 - Descarga el codigo fuente de este repositorio
+
+- Copia los archivos de la DI API (C:\Program Files\SAP\SAP Business One DI API\JCO\LIB) a la subcarpeta "lib" de este proyecto, reemplazando los archivos existentes. Esto asegura que los archivos JAR de la versin de la API instalada coincidan con tu version de SAP durante la compilacion del codigo fuente.
 
 - Copia el archivo de configuraciones de este reposotorio llamado [ExternalConfigurations.groovy](https://github.com/arturoojeda/handy-sap-b1-integration/blob/master/ExternalConfigurations.groovy) a la carpeta raiz de Tomcat
 
