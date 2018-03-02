@@ -140,7 +140,7 @@ erp {
 
 - Crea el campo personalizado de [status de cliente (OCRD.U_HandyCustomerStatus)](http://ayuda.handy.la/general/integracion-sap-b1-handy) en la BD de SAP B1. Debe de ser tipo **nvarchar(20)**. Una vez creado este campo, deberas llenarlo con el valor "02" para los clientes que quieres sincronizar a Handy y "01" para los que no quieres sincronizar.
 
-- Crea el campo personalizado de [familia de producto (OITM.U_HandyProductCategory)](http://ayuda.handy.la/general/integracion-sap-b1-handy) en la BD de SAP B1. Debe de ser de tipo **nvarchar(30)**. Una vez creado este campo, deberas llenarlo con el nombre de la familia de productos correspondiente que quieres que aparezca en Handy para cada producto. Si no lo llenas, los productos se crearan bajo la familia llamada "Sin familia"
+- Crea el campo personalizado de [familia de producto (OITM.U_HandyProductCategory)](http://ayuda.handy.la/general/integracion-sap-b1-handy) en la BD de SAP B1. Debe de ser de tipo **nvarchar(30)**. Una vez creado este campo, deberas llenarlo con el nombre de la familia de productos correspondiente que quieres que aparezca en Handy para cada producto. Si no lo llenas, los productos se crearan bajo la familia llamada "Sin familia". NOTA: si ya tenas un campo personalizado con este dato, no tienes que crear este campo, sólo tienes que ir al archivo ExternalConfigurations.groovy y en la seccion erp->sap->tables->product->column->family. Coloca ahi el nombre del campo y su tipo.
 
 - Para obtener un mejor rendimiento de la instancia de Tomcat, (duplica los valores default de asignacion de memoria)[http://www.mkyong.com/tomcat/tomcat-javalangoutofmemoryerror-permgen-space/].
 
