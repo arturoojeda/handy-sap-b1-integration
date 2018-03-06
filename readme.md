@@ -144,7 +144,7 @@ erp {
 
 - Para obtener un mejor rendimiento de la instancia de Tomcat, (duplica los valores default de asignacion de memoria)[http://www.mkyong.com/tomcat/tomcat-javalangoutofmemoryerror-permgen-space/].
 
-![alt text](https://github.com/arturoojeda/handy-sap-b1-integration/blob/master/tomcat%20memory.png?raw=true "Duplicar memoria Tomcat")
+![alt text](https://github.com/arturoojeda/handy-sap-b1-integration/blob/master/Handy%20Tomcat.png?raw=true "Duplicar memoria Tomcat")
 
 
 - Corre el servicio de Tomcat y espera unos 5 minutos para que todo inicialice.
