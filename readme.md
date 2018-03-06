@@ -162,3 +162,5 @@ erp {
 
 ### La aplicacion no inicializa
 - Asegura que el usuario con el que corre el servicio de Tomcat tiene acceso a leer el archivo ExternalConfigurations.groovy. Si esto no funciona, fusiona el archivo Config.groovy del proyecto con el de ExternalConfigurations.groovy ya que pudiera ser que tu archivo externo no se esta leyendo por permisos hacia el archivo externo. 
+
+- Error "Can't find moniker". Si se presenta este problema al intentar guardar un pedido, pueden ser dos causas: la instalacin de DI API no se finalizo correctamente o no corresponde a la version de SAP instalada o el usuario que se esta utilizando para la conexion ya se encuentra ocupado para otras funciones.
