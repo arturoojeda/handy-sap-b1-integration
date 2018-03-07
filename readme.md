@@ -10,6 +10,8 @@ Se realizaron pruebas con Windows Server 2012 y 2016 operando correctamente. Con
 
 NO se recomienda utilizar servidores de 32 bits por limitaciones de memoria.
 
+Las aplicaciones a usar NO se deben de mezclar entre 32 a 64 bits.
+
 Esta aplicacion es compatible con servidores Windows y Linux.
 
 ## Pasos para la instalacion
@@ -17,6 +19,10 @@ Esta aplicacion es compatible con servidores Windows y Linux.
 - Intala el SDK de JAVA 7 (JDK) y asegurate de agregarlo como variable de la linea de comando (que la linea de comando responda al comando "java" y que la variable de entorno JAVA_HOME apunte a la carpeta donde reside Java). Oracle ya no tiene disponible el JDK 7 para su descarga. Si estás usando Windows, te recomendamos [esta opcion](https://github.com/alexkasko/openjdk-unofficial-builds) ([64 bits](https://bitbucket.org/alexkasko/openjdk-unofficial-builds/downloads/openjdk-1.7.0-u80-unofficial-windows-amd64-installer.zip), [32 bits](https://bitbucket.org/alexkasko/openjdk-unofficial-builds/downloads/openjdk-1.7.0-u80-unofficial-windows-i586-installer.zip)), aunque es no oficial. Para Linux y macOS, puedes usar [OpenJDK](http://openjdk.java.net/). [Este video](https://www.youtube.com/watch?v=Nu3GgjuUOtg), elabora sobre la instalacion de Java, ademas de la instalacion de Grails (siguientes pasos).
 
 - Instala Tomcat 7 para 64 bits. Es mas sencillo si lo instalas como servicio porque ademas puedes hacer que arranque automaticamente al encender el servidor.
+
+- Ajusta las configuraciones de codificacion de Tomcat: en los archivos que se encuentran en C:\Program Files (x86)\Apache Software Foundation\Tomcat 7.0\conf, edita el archivo server.xml, en todas las cadenas <Connector  />, agrega la frase **URIEncoding="UTF-8"**. En el archivo web.xml, en la cabeza del archivo, cambia la codificacion a UTF 8, quedando algo como lo siguiente: 
+
+`<?xml version="1.0" encoding="UTF-8"?>`
 
 - Crea la carpeta **/handy/** (Windows: C:/handy/) y asegurate que el usuario con el que corre Tomcat tiene acceso de escritura (sudo chmod 777 handy). En esta carpeta se almacenara la BD temporal de sincronizacion.
 
