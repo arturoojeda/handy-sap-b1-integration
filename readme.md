@@ -28,7 +28,7 @@ Esta aplicacion es compatible con servidores Windows y Linux.
 
 - Instala la DI API de SAP B1 de 64 bits (x64).
 
-- Instala[Grails 2.2.1](http://grails.org/download.html). Puedes comprobar la instalacion desde la línea de comando corriendo el comando "grails". También de te dejamos [este video](https://www.youtube.com/watch?v=Nu3GgjuUOtg) que muestra como montar todo el ambiente de Grails + Java completo en Windows.
+- Instala [Grails 2.2.1](http://grails.org/download.html). Puedes comprobar la instalacion desde la línea de comando corriendo el comando "grails". También de te dejamos [este video](https://www.youtube.com/watch?v=Nu3GgjuUOtg) que muestra como montar todo el ambiente de Grails + Java completo en Windows.
 
 Deberás recibir la siguiente respuesta en la linea de comandos:
 ```
@@ -47,6 +47,8 @@ grails>
 - Crea un usuario administrador en el portal Handy, en tu cuenta. Se recomienda llamar al usuario "Integracion SAP" para su facil identificacion. Las credenciales de este usuario las necesitaras a continuacion.
 
 - Crea una cuenta gratuita en [LogEntries](https://logentries.com/), el sistema que se estara utilizando para llevar los logs de operacion del sistema. Una vez creada la cuenta, copia el token de LogEntries para configurarlo a continuacion.
+
+- Crea una cuenta gratuita de [Amazon Web Services](https://aws.amazon.com/). Se necesitará para otorgar permisos a la cola de eventos de SQS de pedidos asignada a tu cuenta de Handy. Necesitaras contactarnos y compartirnos tu número de cuenta de AWS para darte acceso a la cola de SQS.
 
 - Utilizando un editor de texto regular (recomendamos usar [SublimeText](https://www.sublimetext.com/) o [Notepad++](https://notepad-plus-plus.org/)) , edita el archivo de configuraciones con las credenciales de Handy sobre las siguientes variables y el token de LogEntries. En "company", introduce el nombre de tu empresa:
 
@@ -73,6 +75,22 @@ dataSource_erp {
     //Pruebas
     url = "jdbc:sqlserver://HOSTNAME:1433;databaseName=DATABASE_NAME"
 }
+```
+
+- Configura los datos de tu cuenta de AWS:
+```
+grails.plugin.awssdk.accessKey = ''
+grails.plugin.awssdk.secretKey = ''
+grails.plugin.awssdk.region = ''
+```
+
+- Ponte en contacto con nosotros para proporcionarte la URL de la cola de SQS que se te asignará. Nosotros le asignaremos permisos a tu cuenta como lectura en esa cola de SQS. Deberas configurar dicha URL en la siguiente seccion del archivo de configuraciones:
+
+```
+    sqs{
+        enabled = false
+        url = ''
+    }
 ```
 
 - Sobre el mismo archivo, selecciona los datos de Handy que quieres sincronizar:
