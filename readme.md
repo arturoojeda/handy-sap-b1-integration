@@ -117,7 +117,7 @@ product {
     send = true
 }
 
-// ¿Crear listas de precio en SAP B1 hacia Handy?
+// ¿Crear listas de precio en SAP B1 hacia Handy?. Es necesario crear la lista de precios en Handy antes, donde el código de la lista en Handy, coincide con el ID de la lista en SAP.
 priceList {
     send = false
     sendFromProduct = true
@@ -170,6 +170,7 @@ erp {
 
 ![alt text](https://github.com/arturoojeda/handy-sap-b1-integration/blob/master/Handy%20Tomcat.png?raw=true "Duplicar memoria Tomcat")
 
+- Si vas a sincronizar listas de precio, es necesario crear la lista de precios en Handy antes, donde el código de la lista en Handy, coincide con el ID de la lista en SAP. El nombre de la lista debe de coincidir con SAP también. Se crea la lista en Handy como encabezado y ahora se podrá sincronizar.
 
 - Corre el servicio de Tomcat y espera unos 5 minutos para que todo inicialice.
 
